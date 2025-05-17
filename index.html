@@ -33,15 +33,37 @@
                     </a>
                 </ul>
             </nav>
+            <div class="burger" onclick="openBurger(this)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="burger-menu" id="bm">
+                <nav class="nav-bar">
+                    <ul class="nav-bar-page">
+                        <a href class="active">
+                            // Accueil
+                        </a>
+                        <a href="projets/project.html" onclick="closeBurger()">
+                            // Projets
+                        </a>
+                        <a href="a-propos/about-me.html" onclick="closeBurger()">
+                            // About me
+                        </a>
+                        <a href="contact/contact.html" onclick="closeBurger()">
+                            // Contact
+                        </a>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        
         <span class="background-title">
             <h1>COMPUTER SCIENCE COMPUTER</h1>
             <h1>&nbsp SCIENCE COMPUTER SCIENCE</h1>
         </span>
         <div class="container">
-            
+
             <h1 class="title"><span>Esteves</span> <br> Helder</h1>
             <p>Etudiant en BUT INformatique </p>
         </div>
@@ -74,16 +96,19 @@
                     </a>
                 </div>
                 <div class="projets">
-                    <a class="card-link" href="site-educatif/site-educatif.html">
+                    <a class="card-link"
+                        href="site-educatif/site-educatif.html">
                         <div class="card">
                             <div class="card-header" id="p1">
                                 <img id="projet"
-                                    src="image/img-projet/site-education/site_home.png" alt>
+                                    src="image/img-projet/site-education/site_home.png"
+                                    alt>
                             </div>
                             <div class="card-body">
                                 <h1>Site éducatif</h1>
                                 <h3>Front-end</h3>
-                                <p>Ce projet avait pour but de créer un site avec
+                                <p>Ce projet avait pour but de créer un site
+                                    avec
                                     des cours, des exercices et autres.</p>
                             </div>
                             <div class="card-footer">
@@ -95,13 +120,15 @@
                     <a class="card-link" href="tetris/tetris.html">
                         <div class="card">
                             <div class="card-header" id="p2">
-                                <img id="" class="tetris"
+                                <img id class="tetris"
                                     src="image/img-projet/tetris/mode.png" alt>
                             </div>
                             <div class="card-body">
                                 <h1>Tetris</h1>
                                 <h3>Développeur Python</h3>
-                                <p>Recoder tetris avec une interface graphique et des modes de jeu</p>
+                                <p>Version enrichie de Tetris en Python avec
+                                    interface graphique et plusieurs modes de
+                                    jeu.</p>
                             </div>
                             <div class="card-footer">
                                 <img src="image/icon/react-1.png" alt>
@@ -113,12 +140,14 @@
                         <div class="card">
                             <div class="card-header" id="p3">
                                 <img id="projet"
-                                    src="image/img-projet/site-education/site_home.png" alt>
+                                    src="image/img-projet/unesco/home.png" alt>
                             </div>
                             <div class="card-body">
                                 <h1>Unesco</h1>
                                 <h3>Front-end</h3>
-                                <p>Site sur le patrimoine de kyoto</p>
+                                <p>Site web sur le patrimoine UNESCO de Kyoto,
+                                    avec ses monuments, son histoire et son
+                                    architecture.</p>
                             </div>
                             <div class="card-footer">
                                 <img src="image/icon/react-1.png" alt>
@@ -159,11 +188,9 @@
                 </svg>
             </a>
 
-            <!-- <a href="" class="cv">
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="#59E8DC"  class="icon icon-tabler icons-tabler-filled icon-tabler-file-cv"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2l.117 .007a1 1 0 0 1 .876 .876l.007 .117v4l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h4l.117 .007a1 1 0 0 1 .876 .876l.007 .117v9a3 3 0 0 1 -2.824 2.995l-.176 .005h-10a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005zm-2.5 8a2.5 2.5 0 0 0 -2.5 2.5v3a2.5 2.5 0 1 0 5 0a1 1 0 0 0 -2 0a.5 .5 0 1 1 -1 0v-3a.5 .5 0 1 1 1 0a1 1 0 0 0 2 0a2.5 2.5 0 0 0 -2.5 -2.5m6.743 .03a1 1 0 0 0 -1.213 .727l-.53 2.119l-.53 -2.119a1 1 0 1 0 -1.94 .486l1.5 6c.252 1.01 1.688 1.01 1.94 0l1.5 -6a1 1 0 0 0 -.727 -1.213m-1.244 -7.031l4.001 4.001h-4z" /></svg>
-        </a> -->
 
         </div>
 
     </body>
+    <script src="js/burger_menu.js"></script>
 </html>

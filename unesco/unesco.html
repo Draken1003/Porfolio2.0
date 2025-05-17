@@ -30,41 +30,64 @@
                     </a>
                 </ul>
             </nav>
+            <div class="burger" onclick="openBurger(this)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="burger-menu" id="bm">
+                <nav class="nav-bar">
+                    <ul class="nav-bar-page">
+                        <a href="../index.html" onclick="closeBurger()">
+                            // Accueil
+                        </a>
+                        <a href="../projets/project.html" class="active" onclick="closeBurger()">
+                            // Projets
+                        </a>
+                        <a href="../a-propos/about-me.html" onclick="closeBurger()">
+                            // About me
+                        </a>
+                        <a href="../contact/contact.html" onclick="closeBurger()">
+                            // Contact
+                        </a>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <div class="container">
             <div class="title">
-                <h1>Site Educatif</h1>
+                <h1>Unesco</h1>
                 <hr>
             </div>
 
             <div class="projet">
                 <div class="description">
                     <div class="left">
-                        <img src="../image/img-projet/site-education/site_home.png" alt>
+                        <img src="../image/img-projet/unesco/home.png" alt>
                     </div>
                     <div class="right">
                         <div class="top">
-                            <p>Lorem ipsum dolor sit amet. Rem possimus corporis
-                                ea illo temporibus et reprehenderit repudiandae
-                                eos nihil consequatur At molestiae provident. Ut
-                                maiores libero et rerum veniam et mollitia
-                                veniam ab sequi reprehenderit?
-                                Rem aliquam magni qui dolore dolorem quo
-                                pariatur expedita vel quas eveniet et voluptates
-                                obcaecati et porro rerum. Ex voluptatem quasi
-                                quo tempore dolores sed quos soluta et enim
-                                fuga. Est ipsa dolorem id sapiente voluptas ut
-                                voluptas autem et voluptatum vitae quo dolorum
-                                odio sed odit laboriosam? Ut reprehenderit
-                                labore et eligendi velit ut reprehenderit neque
-                                et maxime Quis ut odit dignissimos.
+                            <p>Ce projet scolaire consiste en la création d’un
+                                site web consacré au patrimoine mondial de
+                                Kyoto, en lien avec l’UNESCO. Destiné à un large
+                                public, ce site recense les monuments majeurs de
+                                la ville, accompagnés de descriptions détaillées
+                                sur leur histoire, leur architecture et leur
+                                importance culturelle. Construit en HTML, CSS et
+                                JavaScript, ce projet a également été l’occasion
+                                de développer un travail de groupe structuré,
+                                favorisant la collaboration, la répartition des
+                                tâches et l’initiation à la conception web. Ce
+                                site met en valeur la richesse culturelle de
+                                Kyoto tout en proposant une navigation simple et
+                                informative
                             </p>
                         </div>
                         <div class="bottom">
-                            <img src="../image/icon/react-1.svg" alt>
                             <img src="../image/icon/html-1.svg" alt>
                             <img src="../image/icon/css-3.svg" alt>
+                            <img src="../image/icon/javascript-r.svg" alt>
                         </div>
                     </div>
                 </div>
@@ -74,13 +97,13 @@
                     </div>
                     <div class="images">
                         <div class="left">
-                            <img src="../image/img-projet/site-education/site_exam.png" alt="">
+                            <img src="../image/img-projet/unesco/home2.png" alt>
                         </div>
                         <div class="right">
-                            <img src="../image/img-projet/site-education/site_login.png" alt="">
-                            <img src="../image/img-projet/site-education/site_sign_up.png" alt="">
+                            <img src="../image/img-projet/unesco/lieu.png" alt>
+                            <img src="../image/img-projet/unesco/lieu2.png" alt>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -121,4 +144,5 @@
 
         </div>
     </body>
+    <script src="../js/burger_menu.js"></script>
 </html>

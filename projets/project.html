@@ -30,6 +30,29 @@
                     </a>
                 </ul>
             </nav>
+            <div class="burger" onclick="openBurger(this)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="burger-menu" id="bm">
+                <nav class="nav-bar">
+                    <ul class="nav-bar-page">
+                        <a href="../index.html" onclick="closeBurger()">
+                            // Accueil
+                        </a>
+                        <a href class="active">
+                            // Projets
+                        </a>
+                        <a href="../a-propos/about-me.html" onclick="closeBurger()">
+                            // About me
+                        </a>
+                        <a href="../contact/contact.html" onclick="closeBurger()">
+                            // Contact
+                        </a>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <div class="container">
@@ -43,7 +66,8 @@
                     <div class="card">
                         <div class="card-header" id="p1">
                             <img id="projet"
-                                src="../image/img-projet/site-education/site_home.png" alt>
+                                src="../image/img-projet/site-education/site_home.png"
+                                alt>
                         </div>
                         <div class="card-body">
                             <h1>Site éducatif</h1>
@@ -66,7 +90,9 @@
                         <div class="card-body">
                             <h1>Tetris</h1>
                             <h3>Développeur Python</h3>
-                            <p>Recoder tetris avec une interface graphique et des modes de jeu</p>
+                            <p>Version enrichie de Tetris en Python avec
+                                interface graphique et plusieurs modes de
+                                jeu.</p>
                         </div>
                         <div class="card-footer">
                             <img src="../image/icon/react-1.png" alt>
@@ -74,23 +100,25 @@
                     </div>
                 </a>
 
-                <a class="card-link" href="../site-educatif/site-educatif.html">
+                <a class="card-link" href="../unesco/unesco.html">
                     <div class="card">
                         <div class="card-header" id="p3">
                             <img id="projet"
-                                src="../image/img-projet/site-education/site_home.png" alt>
+                                src="../image/img-projet/unesco/home.png" alt>
                         </div>
                         <div class="card-body">
-                            <h1>Site éducatif</h1>
+                            <h1>Unesco</h1>
                             <h3>Front-end</h3>
-                            <p>Ce projet avait pour but de créer un site avec
-                                des cours, des exercices et autres.</p>
+                            <p>Site web sur le patrimoine UNESCO de Kyoto, avec
+                                ses monuments, son histoire et son
+                                architecture.</p>
                         </div>
                         <div class="card-footer">
                             <img src="../image/icon/react-1.png" alt>
                         </div>
                     </div>
                 </a>
+
             </div>
         </div>
         <div class="link">
@@ -129,4 +157,5 @@
 
         </div>
     </body>
+    <script src="../js/burger_menu.js"></script>
 </html>

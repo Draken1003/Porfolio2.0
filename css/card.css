@@ -1,7 +1,7 @@
 .card-link{
     text-decoration: none;
     width: 30%;
-    height: 90%;
+    height: 85%;
 }
 .card {
     background-color: var(--secondary-color);

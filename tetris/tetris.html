@@ -30,6 +30,29 @@
                     </a>
                 </ul>
             </nav>
+            <div class="burger" onclick="openBurger(this)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="burger-menu" id="bm">
+                <nav class="nav-bar">
+                    <ul class="nav-bar-page">
+                        <a href="../index.html" onclick="closeBurger()">
+                            // Accueil
+                        </a>
+                        <a href="../projets/project.html" class="active" onclick="closeBurger()">
+                            // Projets
+                        </a>
+                        <a href="../a-propos/about-me.html" onclick="closeBurger()">
+                            // About me
+                        </a>
+                        <a href="../contact/contact.html" onclick="closeBurger()">
+                            // Contact
+                        </a>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <div class="container">
@@ -45,20 +68,19 @@
                     </div>
                     <div class="right">
                         <div class="top">
-                            <p>Lorem ipsum dolor sit amet. Rem possimus corporis
-                                ea illo temporibus et reprehenderit repudiandae
-                                eos nihil consequatur At molestiae provident. Ut
-                                maiores libero et rerum veniam et mollitia
-                                veniam ab sequi reprehenderit?
-                                Rem aliquam magni qui dolore dolorem quo
-                                pariatur expedita vel quas eveniet et voluptates
-                                obcaecati et porro rerum. Ex voluptatem quasi
-                                quo tempore dolores sed quos soluta et enim
-                                fuga. Est ipsa dolorem id sapiente voluptas ut
-                                voluptas autem et voluptatum vitae quo dolorum
-                                odio sed odit laboriosam? Ut reprehenderit
-                                labore et eligendi velit ut reprehenderit neque
-                                et maxime Quis ut odit dignissimos.
+                            <p>Ce projet scolaire consiste à développer une
+                                version personnalisée de Tetris en Python,
+                                intégrant une interface graphique et plusieurs
+                                modes de jeu originaux : deux joueurs,
+                                pourrissement des cases, polyominos variés, ou
+                                encore plateau incliné à 45°. Conçu en équipe,
+                                le projet a permis d’aborder à la fois la
+                                logique du gameplay, la gestion de données avec
+                                JSON, ainsi que la création d’une interface
+                                visuelle interactive. Il s’agit d’un excellent
+                                exercice de coordination, de programmation
+                                orientée projet et de créativité dans les
+                                mécaniques de jeu.
                             </p>
                         </div>
                         <div class="bottom">
@@ -73,13 +95,16 @@
                     </div>
                     <div class="images">
                         <div class="left">
-                            <img src="../image/img-projet/tetris/duo.png" alt="">
+                            <img src="../image/img-projet/tetris/duo.png" alt>
                         </div>
                         <div class="right">
-                            <img src="../image/img-projet/tetris/polyominos.png" alt="">
-                            <img src="../image/img-projet/tetris/pourrissement.png" alt="">
+                            <img src="../image/img-projet/tetris/polyominos.png"
+                                alt>
+                            <img
+                                src="../image/img-projet/tetris/pourrissement.png"
+                                alt>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -120,4 +145,5 @@
 
         </div>
     </body>
+    <script src="../js/burger_menu.js"></script>
 </html>

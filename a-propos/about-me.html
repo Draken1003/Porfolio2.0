@@ -34,6 +34,29 @@
                     </a>
                 </ul>
             </nav>
+            <div class="burger" onclick="openBurger(this)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="burger-menu" id="bm">
+                <nav class="nav-bar">
+                    <ul class="nav-bar-page">
+                        <a href="../index.html" onclick="closeBurger()">
+                            // Accueil
+                        </a>
+                        <a href="../projets/project.html" onclick="closeBurger()">
+                            // Projets
+                        </a>
+                        <a href class="active">
+                            // About me
+                        </a>
+                        <a href="../contact/contact.html" onclick="closeBurger()">
+                            // Contact
+                        </a>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <div class="container">
@@ -91,10 +114,13 @@
                         <a href="#"><img src="../image/icon/java-4.svg"
                                 alt="java"></a>
                         <a href="../tetris/tetris.html"><img
-                                src="../image/icon/python-5.svg" alt="python"></a>
+                                src="../image/icon/python-5.svg"
+                                alt="python"></a>
                         <!-- <a href="#"><img src="/image/icon/c--4.svg" alt="c#"></a> -->
-                        <a href="#"><img src="../image/icon/c-1.svg" alt="c"></a>
-                        <a href="#"><img src="../image/icon/c.svg" alt="c++"></a>
+                        <a href="#"><img src="../image/icon/c-1.svg"
+                                alt="c"></a>
+                        <a href="#"><img src="../image/icon/c.svg"
+                                alt="c++"></a>
                         <a href="#"><img src="../image/icon/php-4.svg"
                                 alt="php"></a>
                         <a href="#"><img src="../image/icon/figma-icon.svg"
@@ -179,4 +205,5 @@
 
         </div>
     </body>
+    <script src="../js/burger_menu.js"></script>
 </html>

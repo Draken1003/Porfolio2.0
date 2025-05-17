@@ -30,6 +30,29 @@
                     </a>
                 </ul>
             </nav>
+            <div class="burger" onclick="openBurger(this)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="burger-menu" id="bm">
+                <nav class="nav-bar">
+                    <ul class="nav-bar-page">
+                        <a href="../index.html" onclick="closeBurger()">
+                            // Accueil
+                        </a>
+                        <a href="../projets/project.html" class="active" onclick="closeBurger()">
+                            // Projets
+                        </a>
+                        <a href="../a-propos/about-me.html" onclick="closeBurger()">
+                            // About me
+                        </a>
+                        <a href="../contact/contact.html" onclick="closeBurger()">
+                            // Contact
+                        </a>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <div class="container">
@@ -41,7 +64,9 @@
             <div class="projet">
                 <div class="description">
                     <div class="left">
-                        <img src="../image/img-projet/site-education/site_home.png" alt>
+                        <img
+                            src="../image/img-projet/site-education/site_home.png"
+                            alt>
                     </div>
                     <div class="right">
                         <div class="top">
@@ -74,13 +99,19 @@
                     </div>
                     <div class="images">
                         <div class="left">
-                            <img src="../image/img-projet/site-education/site_exam.png" alt="">
+                            <img
+                                src="../image/img-projet/site-education/site_exam.png"
+                                alt>
                         </div>
                         <div class="right">
-                            <img src="../image/img-projet/site-education/site_login.png" alt="">
-                            <img src="../image/img-projet/site-education/site_sign_up.png" alt="">
+                            <img
+                                src="../image/img-projet/site-education/site_login.png"
+                                alt>
+                            <img
+                                src="../image/img-projet/site-education/site_sign_up.png"
+                                alt>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -121,4 +152,5 @@
 
         </div>
     </body>
+    <script src="../js/burger_menu.js"></script>
 </html>

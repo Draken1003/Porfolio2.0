@@ -28,11 +28,27 @@ body {
 
 
 .card-container {
-    height: 55%;
+    height: 60%;
     margin: 0 auto;
     width: 70%;
     display: flex;
     justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.card-container::-webkit-scrollbar{
+    background-color: var(--bg-color);
+    width: 5px;
+    height: 8px;
+    scroll-padding: 10px;
+}
+.card-container::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    
 }
 
 

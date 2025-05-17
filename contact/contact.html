@@ -29,7 +29,32 @@
                     </a>
                 </ul>
             </nav>
+            <div class="burger" onclick="openBurger(this)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="burger-menu" id="bm">
+                <nav class="nav-bar">
+                    <ul class="nav-bar-page">
+                        <a href="../index.html" onclick="closeBurger()">
+                            // Accueil
+                        </a>
+                        <a href="../projets/project.html" onclick="closeBurger()">
+                            // Projets
+                        </a>
+                        <a href="../a-propos/about-me.html" onclick="closeBurger()">
+                            // About me
+                        </a>
+                        <a href class="active">
+                            // Contact
+                        </a>
+                    </ul>
+                </nav>
+            </div>
         </header>
+        
+            
 
         <div class="container">
             <div class="sous-container">
@@ -98,4 +123,5 @@
 
         </div>
     </body>
+    <script src="../js/burger_menu.js"></script>
 </html>

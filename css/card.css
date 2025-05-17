@@ -30,15 +30,15 @@
 }
 
 .card>#p1 {
-    background-image: url(image/bg-card/bg-blue.png);
+    background-image: url(/image/bg-card/bg-blue.png);
 }
 
 .card>#p2 {
-    background-image: url(image/bg-card/bg-yellow.png);
+    background-image: url(/image/bg-card/bg-yellow.png);
 }
 
 .card>#p3 {
-    background-image: url(image/bg-card/bg-pink.png);
+    background-image: url(/image/bg-card/bg-pink.png);
 }
 
 

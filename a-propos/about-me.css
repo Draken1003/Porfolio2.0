@@ -167,7 +167,7 @@
 
 .container>.sous-container>.etudes>.etude>.date>h1 {
     font-family: 'Inter';
-    color: var(--texte-color);
+    color: var(--primary-color);
     font-size: 1vw;
 }
 
@@ -178,6 +178,7 @@
 .container>.sous-container>.etudes>.etude>.etude-name>h1 {
     font-family: 'Inter';
     color: var(--texte-color);
+    font-weight: normal;
     font-size: 1vw;
     margin-bottom: 10px;
 }

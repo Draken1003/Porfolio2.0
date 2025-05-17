@@ -134,6 +134,9 @@
     background-color: var(--secondary-color);
 }
 
+.container2>.projet-recent{
+    height: 65vh;
+}
 .container2>.projet-recent>.titre {
     background-color: var(--secondary-color);
     display: flex;
@@ -142,6 +145,7 @@
     border-radius: 20px;
     padding: 10px 40px;
     margin: 20px 0;
+    height: 15%;
     
 }
 
@@ -174,6 +178,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 6%;
+    height: 80%;
 }
 
 @media screen and (max-width: 768px) {

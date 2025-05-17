@@ -1,0 +1,73 @@
+body {
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+}
+
+.container>.title {
+    width: fit-content;
+    margin: 10% 0 0 15%;
+}
+
+.container>.title>h1 {
+    font-family: 'Anton', Courier, monospace;
+    color: var(--primary-color);
+    font-size: 3vw;
+    margin-bottom: 10px;
+}
+
+.container>.title>hr {
+    width: 165%;
+    height: 2px;
+    background-color: var(--primary-color);
+    border: none;
+    margin-bottom: 40px;
+}
+
+.project-container {
+    height: 100%;
+}
+
+.project-container>.card-container {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    body{
+        overflow-y: scroll;
+    }
+    .container>.title {
+        width: 75%;
+        margin: auto;
+    }
+
+    .container>.title>h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .container>.title>hr {
+        width: 100%;
+    }
+
+    .project-container {
+        height: 100vh;
+    }
+
+    .project-container>.card-container {
+        flex-direction: column;
+        width: 80%;
+        gap: 20px;
+        margin-bottom: 300px;
+    }
+}

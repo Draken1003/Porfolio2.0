@@ -1,0 +1,90 @@
+.card-link{
+    text-decoration: none;
+    width: 30%;
+}
+.card {
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    font-family: "Oswald";
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.card>.card-header {
+    background-size: 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 29px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;  
+    box-sizing: border-box;
+}
+
+.card>#p1 {
+    background-image: url(/image/bg-card/bg-blue.png);
+}
+
+.card>#p2 {
+    background-image: url(/image/bg-card/bg-yellow.png);
+}
+
+.card>#p3 {
+    background-image: url(/image/bg-card/bg-pink.png);
+}
+
+
+.card>.card-header>#projet {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.card>.card-body {
+    padding: 20px;
+    height: 30%;
+    box-sizing: border-box;
+}
+
+.card>.card-body>h1 {
+
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.card>.card-body>h3 {
+    color: #54DACE;
+}
+
+.card>.card-body>p {
+    color: var(--texte-color);
+    font-size: 1rem;
+}
+
+
+.card>.card-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 20%;   
+    box-sizing: border-box;
+}
+
+.card>.card-footer>img {
+    margin-left: 8px;
+    width: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-link {
+        width: 100%;
+    }
+}

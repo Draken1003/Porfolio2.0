@@ -1,0 +1,185 @@
+.container {
+    height: 100vh;
+
+}
+
+.container>.title {
+    width: fit-content;
+    margin: 10% 0 0 15%;
+}
+
+.container>.title>h1 {
+    font-family: 'Anton', Courier, monospace;
+    color: var(--primary-color);
+    font-size: 3vw;
+    margin-bottom: 10px;
+}
+
+.container>.title>hr {
+    width: 165%;
+    height: 2px;
+    background-color: var(--primary-color);
+    border: none;
+    margin-bottom: 40px;
+}
+
+.container>.projet {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container>.projet>.description {
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+.container>.projet>.description>.left {
+    width: 50%;
+}
+
+.container>.projet>.description>.left>img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.container>.projet>.description>.right {
+    width: 50%;
+}
+
+.container>.projet>.description>.right>.top {
+    height: 80%;
+    padding-top: 10px;
+}
+
+.container>.projet>.description>.right>.top>p {
+    color: var(--texte-color);
+    font-size: 1vw;
+    font-family: 'Inter';
+    width: 100%;
+}
+
+.container>.projet>.description>.right>.bottom {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 50%;
+    height: calc(100% - 80% - 10px);
+}
+
+.container>.projet>.description>.right>.bottom>img {
+    width: 15%;
+}
+
+
+.container>.projet>.image>.title {
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+}
+
+.container>.projet>.image>.title>h1 {
+    color: var(--texte-color);
+    font-size: 2.5vw;
+    font-family: 'Anton';
+    letter-spacing: 2px;
+}
+
+.container>.projet>.image>.images {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.container>.projet>.image>.images>.left {
+    width: 45%;
+}
+
+.container>.projet>.image>.images>.left>img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.container>.projet>.image>.images>.right {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 55%;
+}
+
+.container>.projet>.image>.images>.right>img {
+    width: calc(100% - 55% - 10px);
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container>.title {
+        width: 75%;
+        margin: auto;
+    }
+
+    .container>.title>h1 {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .container>.title>hr {
+        width: 100%;
+    }
+
+    .container>.projet {
+        width: 90%;
+    }
+
+    .container>.projet>.description {
+        padding: 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container>.projet>.description>.left {
+        width: 100%;
+    }
+
+    .container>.projet>.description>.right {
+        width: 100%;
+    }
+
+    .container>.projet>.description>.right>.top>p {
+        font-size: 4vw;
+    }
+
+    .container>.projet>.description>.right>.bottom>img {
+        width: 20%;
+        margin-top: 10px;
+    }
+
+    .container>.projet>.image>.title>h1 {
+        font-size: 6vw;
+    }
+    .container>.projet>.image>.images {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container>.projet>.image>.images>.left {
+        width: 100%;
+    }
+
+    .container>.projet>.image>.images>.right {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .container>.projet>.image>.images>.right>img {
+        width: 50%;
+    }
+
+}

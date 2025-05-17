@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --bg-color: #131313;
+    --primary-color: #59E8DC;
+    --secondary-color: #232323;
+    --title-color-2: #009387;
+    --texte-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+
+header>.title-nav {
+    margin: 0 10%;
+    color: var(--primary-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}
+
+header>.title-nav>.point {
+    color: var(--texte-color);
+}
+
+header>.title-nav>.underscore {
+    color: #A057D8;
+}
+
+
+header>.nav-bar {
+    width: 40%;
+}
+
+header>.nav-bar>.nav-bar-page {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+header>.nav-bar>.nav-bar-page>a:hover,
+.active {
+    border-bottom: solid var(--primary-color);
+}
+
+
+header>.nav-bar>.nav-bar-page>a {
+    font-family: "Oswald";
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--texte-color);
+}
+
+
+.link {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    header {
+        position: relative;
+        display: block;
+    }
+
+    header>.title-nav {
+        margin: 0 5%;
+        font-size: 1.5rem;
+    }
+
+    header>.nav-bar {
+        width: 100%;
+    }
+
+    header>.nav-bar>.nav-bar-page {
+        display: flex;
+        justify-content: space-around;
+        width: 75%;
+        margin: 20px auto;
+    }
+
+    header>.nav-bar>.nav-bar-page>a {
+        font-size: 1rem;
+    }
+
+    .link>a>svg {
+        width: 30px;
+        height: 30px;
+    }
+}

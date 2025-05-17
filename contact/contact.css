@@ -1,0 +1,132 @@
+body{
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+.container > .sous-container{
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    height: 60%;
+    width: 60%;
+}
+.container > .sous-container > .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+.container > .sous-container > .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.container > .sous-container > .right > .contact{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container > .sous-container > .right > .contact > h1{
+    color:var(--primary-color);
+    font-family: 'Anton';
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+.container > .sous-container > .right > .contact > h1 > hr{
+    background-color:var(--primary-color);
+    border: none;
+    width: 100%;
+    height: 2px;
+}
+
+.container > .sous-container > .right > .contact > form{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.container > .sous-container > .right > .contact > form > input , textarea{
+    border : none;
+    border-radius: 10px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.49);
+    font-family: 'Inter';
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.container > .sous-container > .right > .contact > form > textarea{
+    height: 50%;
+}
+.container > .sous-container > .right > .contact > form > input[type = "submit"]{
+    color: var(--primary-color);
+    font-family: 'Inter';
+    font-size: 0.6vw;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container > .sous-container > .right > .contact > form > input[type = "submit"]:hover{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.container > .sous-container > .right > .contact > form > input[type = "submit"]:active{
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width: 768px) {
+    body{
+        overflow-y: scroll;
+    }
+    .container > .sous-container{
+        width: 90%;
+        height: 80%;
+        justify-content: center;
+    }
+    .container > .sous-container > .left{
+        display: none;
+    }
+    .container > .sous-container > .right{
+        width: 90%;
+    }
+    .container > .sous-container > .right > .contact{
+        width: 100%;
+        height: 100%;
+    }
+    .container > .sous-container > .right > .contact > h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .container > .sous-container > .right > .contact > form > input[type = "submit"]{
+        font-size: 3vw;
+    }
+    
+}

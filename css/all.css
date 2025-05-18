@@ -15,9 +15,6 @@
     user-select: none;
 }
 
-html{
-    overflow-x: hidden;
-}
 
 body {
     background-color: var(--bg-color);
@@ -117,23 +114,23 @@ header > .burger-menu{
     width: 55vw;
 }
 
-.burger-menu-open {
+.open {
     animation: ouvrirMenu 0.5s forwards;
-    display: block; /* ← assure-toi que le menu reste affiché */
 }
 
-.burger-menu-close {
+.close {
     animation: fermerMenu 0.5s forwards;
 }
 
 @keyframes ouvrirMenu {
-    from { transform: translateX(-50vh); }
-    to   { transform: translateX(0); }
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50vh); }
+    
 }
 
 @keyframes fermerMenu {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50vh); }
+    from { transform: translateX(-50vh); }
+    to   { transform: translateX(0); }
 }
 
 header > .burger-menu > .nav-bar{
@@ -171,6 +168,9 @@ header > .burger-menu > .nav-bar > .nav-bar-page > a{
 
 
 @media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
     header {
         position: relative;
         justify-content: space-between;

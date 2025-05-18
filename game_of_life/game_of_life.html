@@ -3,12 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
-            rel="stylesheet">
-
+        <link rel="stylesheet" href="./game_of_life.css">
+        <link rel="stylesheet" href="../css/card.css">
         <link rel="stylesheet" href="../css/all.css">
-        <link rel="stylesheet" href="./about-me.css">
         <title>Esteves Helder</title>
     </head>
     <body>
@@ -21,12 +18,11 @@
                 <ul class="nav-bar-page">
                     <a href="../index.html">
                         // Accueil
-
                     </a>
-                    <a href="../projets/project.html">
+                    <a href="../projets/project.html" class="active">
                         // Projets
                     </a>
-                    <a href class="active">
+                    <a href="../a-propos/about-me.html">
                         // About me
                     </a>
                     <a href="../contact/contact.html">
@@ -45,13 +41,16 @@
                         <a href="../index.html" onclick="closeBurger()">
                             // Accueil
                         </a>
-                        <a href="../projets/project.html" onclick="closeBurger()">
+                        <a href="../projets/project.html" class="active"
+                            onclick="closeBurger()">
                             // Projets
                         </a>
-                        <a href class="active">
+                        <a href="../a-propos/about-me.html"
+                            onclick="closeBurger()">
                             // About me
                         </a>
-                        <a href="../contact/contact.html" onclick="closeBurger()">
+                        <a href="../contact/contact.html"
+                            onclick="closeBurger()">
                             // Contact
                         </a>
                     </ul>
@@ -61,114 +60,56 @@
 
         <div class="container">
             <div class="title">
-                <h1>A Propos de moi</h1>
+                <h1>Game of Life</h1>
                 <hr>
             </div>
 
-            <div class="sous-container">
+            <div class="projet">
                 <div class="description">
                     <div class="left">
+                        <img
+                            src="../image/img-projet/game_of_life/game_of_life.png"
+                            alt>
+                    </div>
+                    <div class="right">
                         <div class="top">
-                            <p>
-                                Je m'appelle Helder Esteves et je suis
-                                actuellement en BUT 1 Informatique. Passionné
-                                par le développement, j’aime coder dans tous les
-                                langages et explorer différents aspects de
-                                l’informatique, qu’il s’agisse de la logique, du
-                                front-end ou même du design.
-
-                                Je travaille avec des technologies comme Python,
-                                HTML/CSS, Java, SQL, et j’ai également des bases
-                                en C et C++. J’accorde aussi une attention
-                                particulière à l’aspect visuel et à l’ergonomie
-                                des interfaces.
-
-                                Curieux, motivé et toujours prêt à apprendre, je
-                                cherche aujourd’hui une alternance pour mettre
-                                en pratique mes compétences, découvrir le monde
-                                professionnel de l’intérieur et continuer à
-                                progresser dans le développement.
+                            <p>Ce projet personnel a consisté à programmer le
+                                célèbre Jeu de la vie en C++ en utilisant la
+                                bibliothèque SDL3. Le principe est simple :
+                                l'utilisateur place des cellules sur une grille,
+                                puis lance la simulation pour voir comment elles
+                                évoluent automatiquement selon des règles
+                                précises. Le but était de mieux comprendre la
+                                logique du jeu, d’apprendre à gérer une
+                                interface graphique, et de progresser en
+                                programmation avec C++. Ce projet m’a permis de
+                                relier visuellement code et comportement, tout
+                                en restant simple et ludique.
                             </p>
                         </div>
                         <div class="bottom">
-                            <a href="../image/CV_Esteves_Helder.pdf"
-                                download="CV_Esteves_Helder.pdf">Télécharger
-                                CV</a>
+                            <img src="../image/icon/c.svg" alt>
                         </div>
-                    </div>
-                    <div class="right">
-                        <img src="../image/Programming.png" alt>
                     </div>
                 </div>
-
-                <div class="competence">
+                <div class="image">
                     <div class="title">
-                        <h1>Compétences</h1>
+                        <h1>Galerie</h1>
                     </div>
-                    <div class="competences">
-                        <a href="../unesco/unesco.html"><img
-                                src="../image/icon/html-1.svg" alt="html"></a>
-                        <a href="../unesco/unesco.html"><img
-                                src="../image/icon/css-3.svg" alt="css"></a>
-                        <!-- <a href="#"><img src="/image/icon/javascript-r.svg" alt=""></a> -->
-                        <a href="#"><img src="../image/icon/java-4.svg"
-                                alt="java"></a>
-                        <a href="../tetris/tetris.html"><img
-                                src="../image/icon/python-5.svg"
-                                alt="python"></a>
-                        <!-- <a href="#"><img src="/image/icon/c--4.svg" alt="c#"></a> -->
-                        <a href="#"><img src="../image/icon/c-1.svg"
-                                alt="c"></a>
-                        <a href="#"><img src="../image/icon/c.svg"
-                                alt="c++"></a>
-                        <a href="#"><img src="../image/icon/php-4.svg"
-                                alt="php"></a>
-                        <a href="#"><img src="../image/icon/figma-icon.svg"
-                                alt="figma"></a>
-                        <a href="#"><img
-                                src="../image/icon/visual-studio-code-1.svg"
-                                alt="vscode"></a>
+                    <div class="images">
+                        <div class="left">
+                            <img
+                                src="../image/img-projet/game_of_life/fenetre.png"
+                                alt>
+                        </div>
+                        <div class="right">
 
-                    </div>
-                </div>
+                        </div>
 
-                <div class="etudes">
-                    <div class="title">
-                        <h1>Parcours scolaire</h1>
-                    </div>
-                    <div class="etude">
-                        <div class="date">
-                            <h1>2024</h1>
-                        </div>
-                        <div class="etude-name">
-                            <h1>BUT Informatique</h1>
-                            <h1>IUT Université Gustave Eiffel</h1>
-                        </div>
-                        <div class="etude-site">
-                            <a
-                                href="https://iut.univ-gustave-eiffel.fr/but/informatique"
-                                target="_blank">Voir Plus</a>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="etude">
-                        <div class="date">
-                            <h1>2023</h1>
-                        </div>
-                        <div class="etude-name">
-                            <h1>Baccalauréat NSI/Mathématique mention: Bien</h1>
-                            <h1>Lycée Georges Clémenceau Villemomble</h1>
-                        </div>
-                        <div class="etude-site">
-                            <a
-                                href="https://lyceeclemenceauvillemomble.fr/formations/terminale/"
-                                target="_blank">Voir Plus</a>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="link">
             <a href="https://www.linkedin.com/in/helder-esteves-b45088338/"
                 target="_blank">

@@ -1,8 +1,3 @@
-.container {
-    height: 100vh;
-    
-}
-
 .container>.title {
     width: fit-content;
     margin: 10% 0 0 15%;

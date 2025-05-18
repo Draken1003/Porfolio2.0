@@ -19,7 +19,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 .container>.title {
@@ -92,6 +91,7 @@
     align-items: center;
     flex-direction: column;
     padding: 0 10%;
+    
 }
 
 .container2>.presentation {
@@ -135,9 +135,6 @@
     background-color: var(--secondary-color);
 }
 
-.container2>.projet-recent{
-    height: 65vh;
-}
 .container2>.projet-recent>.titre {
     background-color: var(--secondary-color);
     display: flex;
@@ -205,6 +202,7 @@
         width: 5.5vw;
         
     }
+    
     .container2> .presentation{
         padding: 20px;
     }

@@ -103,6 +103,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height:fit-content;
 }
 .container2>.presentation >h1 {
     font-family: 'Anton';

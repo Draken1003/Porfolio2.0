@@ -1,7 +1,7 @@
 function openBurger(burgerElement) {
     const menu = document.getElementById("bm");
 
-    if (menu.classList.contains("close")){
+    if (!menu.classList.contains("open")){
         document.documentElement.style.overflow = "hidden";
         document.body.style.overflow = "hidden";
         menu.classList.remove("close");

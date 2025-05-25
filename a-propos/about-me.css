@@ -30,7 +30,7 @@
 .container>.sous-container>.description {
     background-color: var(--secondary-color);
     border-radius: 20px;
-    padding: 20px;
+    padding: 40px;
     width: 100%;
     display: flex;
     gap: 20px;
@@ -43,7 +43,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 20px;
+    gap: 20px;
 
 }
 
@@ -132,6 +132,33 @@
 .container>.sous-container>.competence>.competences>a>img {
     width: 50%;
 }
+
+.container>.sous-container>.competence>.competences>.atout {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container>.sous-container>.competence>.competences>.atout>.top {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container>.sous-container>.competence>.competences>.atout>.top>img {
+    width: 50px;
+}
+
+.container>.sous-container>.competence>.competences>.atout>.bottom {
+    height: 90%;
+}
+.container>.sous-container>.competence>.competences>.atout>.bottom>p {
+    font-family: "Inter";
+    color: var(--texte-color);
+    text-align: center;
+    font-size: 1vw;
+}
+
 
 .container>.sous-container>.etudes {
     width: 100%;
@@ -234,7 +261,7 @@
     .container>.sous-container>.description {
         padding: 20px;
         width: 100%;
-        height: 55vh;
+        
     }
 
     .container>.sous-container>.description>.left {
@@ -243,11 +270,11 @@
     }
 
     .container>.sous-container>.description>.left>.top>p {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .container>.sous-container>.description>.left>.bottom>a {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     .container>.sous-container>.description>.right {
@@ -260,6 +287,14 @@
 
     .container>.sous-container>.competence>.competences>a>img {
         width: 150%;
+    }
+
+    .container>.sous-container>.competence>.competences>.atout>.top>img {
+        width: 25px;
+    }
+
+    .container>.sous-container>.competence>.competences>.atout>.bottom>p {
+        font-size: 2.5vw;
     }
 
     .container>.sous-container>.etudes>.title>h1 {
